@@ -1,0 +1,101 @@
+.contact_container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    margin-top: 50px;
+    overflow: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    @media screen and (max-width:560px) {
+        height: auto;   
+    }
+    }
+
+
+.contact-info{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card{
+    position: relative;
+    max-width: 300px;
+    width: 300px;
+    height: 140px;
+    background-color:WHITE;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+
+}
+
+
+
+
+.icon{
+    font-size: 32px;
+    color: #9a00ff;
+    transition: .3s linear;
+}
+
+.card:hover .icon{
+    transform: scale(4);
+    opacity: 0;
+}
+
+.card-content h3,
+.card-content span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    opacity: 0;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
+.card-content h3{
+    top: 20px;
+    text-transform: uppercase;
+    color: #9a00ff;
+    margin-bottom: 20px;
+}
+
+.card-content span{
+    bottom: 20px;
+    color: #252525;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card:hover h3{
+    opacity: 1;
+    top: 20px;
+    transition: .3s linear .3s;
+}
+
+.card:hover span{
+    opacity: 1;
+    bottom: 46px;
+    transition: .3s linear .3s;
+}
+
+
+@media screen and (max-width:900px){
+    .card{
+        flex: 100%;
+        max-width: 500px;
+    }
+}

@@ -1,0 +1,102 @@
+.about_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 560px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
+}
+
+.objective-box {
+  background-image: linear-gradient(to right, black, #9a00ff);
+  color: WHITE;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 50%;
+  transform: translate(50%, -50%);
+}
+@media screen and (max-width: 560px) {
+  .objective-box {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+.about-box {
+  background-color: white;
+  color: #252525;
+  padding: 20PX;
+  border-radius: 0.75REM;
+  width: 200px;
+  height: 300px;
+  overflow: scroll;
+  border: 2px solid black;
+  transition: all 0.3s ease-in-out;
+  word-wrap: break-word;
+}
+.about-box:hover {
+  background: black;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  color: white;
+}
+.about-box:hover .truncate-box {
+  color: white;
+}
+.about-box::-webkit-scrollbar {
+  display: none;
+}
+.about-box h1 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.truncate-box {
+  color: #252525;
+}
+
+#about-image {
+  position: relative;
+  height: 500px;
+  width: 500px;
+}
+@media screen and (max-width: 720px) {
+  #about-image {
+    width: 100%;
+  }
+}
+#about-image::before {
+  content: "ABOUT ME" !important;
+  font-weight: 600 !important;
+  display: flex;
+  padding: 10px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: white !important;
+  position: absolute !important;
+  letter-spacing: 2px;
+  width: 60%;
+  height: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+  z-index: 999 !important;
+}
+@media screen and (max-width: 560px) {
+  #about-image::before {
+    width: 80%;
+    height: 80%;
+  }
+}/*# sourceMappingURL=about.css.map */

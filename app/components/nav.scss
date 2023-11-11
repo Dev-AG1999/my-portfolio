@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navigation_container{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    height: 50px;
+    position: fixed;
+    top: 0;
+z-index: 999;
+background-color: #9a00ff !important;
+   .navigation_container_hamburger{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+   }
+.navbar_item_small{
+    // height: 200px;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease-in-out;
+    padding: 15px 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    svg{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+     ul{
+        height: 100%;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+list-style: none;
+padding: 15px;
+align-items: center;
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+.ACTIVE{
+    color: #9a00ff;
+}
+
+li{
+margin-bottom: 15px;
+    a{
+    font-weight: bold;
+transition: all 0.3s ease-in-out;
+        // &:hover{
+        //     color: #9a00ff;
+        //     transition: all 0.3s ease-in-out;
+        //     }
+            &:focus{
+                color: #9a00ff;
+            }
+    }
+
+}
+     }
+}
+    .navigation_container_logo{
+height: 100%;
+&_img{
+    height:100px;
+    object-fit: cover;
+    width: 100PX;
+border-radius: 50%;
+    margin-left: 20px;
+    @media screen and (max-width:560px) {
+        height: 70px;
+        width: 70px;
+        
+    }
+}
+    }
+ &_item_wrapper{
+width:400px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+ }
+    &_item{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all 0.3s linear;
+        margin: 10px;
+        letter-spacing: 2px;
+        font-size: 14px;
+        padding: 10px;
+        &:focus,&:hover{
+transition: all 0.3s linear;
+background: #cccccc94;
+border-radius: 3px;
+        }
+      }
+  }
+ #navigation_container_item_wrapper{
+    @media screen and (max-width:560px) {
+        display: none;
+        
+    }
+ }
