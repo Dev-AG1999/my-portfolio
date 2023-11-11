@@ -1,23 +1,16 @@
 "use client"
 import { useState } from "react";
-import { TextField, Button, Typography, Box } from "@mui/material";
 import "../contact/contact.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck,faPhone,faMailBulk,faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import {faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { LinkedIn } from "@mui/icons-material";
 import { LocationCity } from "@mui/icons-material";
 import { GitHub } from "@mui/icons-material";
 
 
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    //
-  };
 
   return (
  <>

@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import hero from '../assets/cup-of-coffee-1280537_1280.jpg';
+
 import Link from 'next/link';
 import style from "./style.module.css"
 

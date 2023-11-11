@@ -1,11 +1,8 @@
 // app/page.js
 "use client";
-import style from "./style.module.css";
-import Image from "next/image";
-import Profile from "../assets/310144956_1514324079012994_5827464339962735330_n.jpg";
+import style from "./style.module.css"
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
-import Container from "./container";
 //importing typewriter-effect
 import Typewriter from "typewriter-effect";
 
