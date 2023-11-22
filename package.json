@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -18,7 +19,7 @@
     "@mui/material": "^5.14.12",
     "aos": "^2.3.4",
     "mdb-ui-kit": "^6.4.2",
-    "next": "^13.5.4",
+    "next": "^14.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-lines-ellipsis": "^0.15.3",
