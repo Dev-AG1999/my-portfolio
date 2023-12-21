@@ -5,13 +5,6 @@
   color: #9a00ff;
   font-weight: 500;
 }
-#card-content{
-  -ms-overflow-style: none;
-  height: 200px;
-  &::-webkit-scrollbar{
-    display: none;
-  }
-}
 
 #seeless {
   border: none;
