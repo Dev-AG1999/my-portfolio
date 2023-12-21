@@ -1,4 +1,5 @@
 // app/layout.js
+"use client"
 import Nav from "./components/nav"
 import { Roboto } from 'next/font/google'
 import style from './style.module.css'
